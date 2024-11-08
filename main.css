@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding-top: 22px ;
+    background-color: #F3D7B7;
+}
+.container{
+    max-width: 1340px ;
+    width: 100%;
+    margin: 0 auto;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px ;
+}
+.header__link{
+    color: rgb(51, 51, 51);
+font-family: "Roboto";
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+
+}
+.header__link:hover{
+    color: aqua;
+}
+.hero{
+    background-color: #F3D7B7;
+    padding-top: 130px ;
+    padding-bottom: 257px;
+}
+.hero__textbox{
+    width: 464px ;
+}
+.hero__title{
+    color: rgb(0, 0, 0);
+font-family:" Roboto";
+font-size: 64px;
+font-weight: 700;
+line-height: 75px;
+
+}
+.hero__text{
+    color: rgb(0, 0, 0);
+font-family: "Roboto";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin: 47px 0;
+}
+.hero__btn{
+    border-radius: 100px;
+background: rgb(10, 119, 95);
+width: 197px;
+color: #ffffff;
+font-family:" Roboto";
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 1px;
+text-align: center;
+padding: 16px 0;
+border: none;
+}
+.hero__btn:hover{
+    background-color: red;
+}
+.hero__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__right{
+    position: relative;
+}
+.hero__dumaloq{
+    position: absolute;
+    top: -175px ;
+    right: 0;
+}
+.hero__right::before{
+    position: absolute;
+    z-index: 2;
+    top: -243px;
+    top: -243px;
+    right: 630px ;
+    background-image: url("./images/image\ 40\ \(1\).png");
+    width: 160px ;
+    height: 160px ;
+    background-position: center;
+    display: block;
+    content: "";
+    transform: rotate(0deg);
+    animation-name:spiner ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+@keyframes spiner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.hero__h{
+    color: rgb(0, 0, 0);
+font-family:" Roboto";
+font-size: 50px;
+font-weight: 700;
+line-height: 59px;
+text-align: center;
+padding-top: 100px ;
+}
+.title{
+    color: rgb(0, 0, 0);
+font-family: "Roboto";
+font-size: 50px;
+font-weight: 700;
+line-height: 59px;
+letter-spacing: 0px;
+text-align: center;
+}
+.title__container{
+    width: 368px;
+    margin: 0 auto;
+    padding-top: 108px;
+}
+.section__container{
+    max-width: 1152px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section__item{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    
+}
+.section__text__h3{
+   color: black;
+font-family: "Roboto";
+font-size: 48px;
+font-weight: 500;
+line-height: 56px;
+letter-spacing: 0px;
+text-align: left;
+}
+.section__mintext__p{
+   color: black;
+font-family: "Roboto";
+font-size: 22px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0px;
+text-align: left;
+padding-top: 10px;
+}
+.kotta__rasmekan{
+    width: 467px;
+    height: 400px;
+}
+.section{
+ background-color: darkslategrey;
+}
+footer{
+    background-color: rgb(243, 215, 183);
+}
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0px;
+    background-color: rgb(243, 215, 183);
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer_list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer_item{
+   color: black;
+font-family: "Roboto";
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 1px;
+text-align: center;
+text-transform: uppercase;
+cursor: pointer;
+}
+.follow__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+.footer__link{
+text-decoration: none;
+color: black;
+}
